@@ -29,3 +29,8 @@ export async function addGrade(stud: Student) {
   console.log("Api",stud )
   return await axios.put(MY_SERVER + "/" + stud.semail,stud).then(res => res.data)
 }
+
+export async function archiveStudent(semail:string) {
+  const response = await axios.delete(MY_SERVER + "/" + semail);
+  return response.data;
+}

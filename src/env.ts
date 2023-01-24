@@ -1,1 +1,1 @@
-export const MY_SERVER= 'http://127.0.0.1:5000/student'
+export const MY_SERVER = 'http://127.0.0.1:5000/student'
